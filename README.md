@@ -1,6 +1,6 @@
 # ERC-4337 EntryPoint Symbolic Tests
 
-This folder contains a Halmos-based symbolic test suite for an ERC-4337-style [EntryPoint](../lib/account-abstraction/contracts/core/EntryPoint.sol) contract. The tests aim to confirm that the EntryPoint correctly handles various edge cases:
+This folder contains a Halmos-based symbolic test suite for an ERC-4337-style [EntryPoint](./lib/account-abstraction/contracts/core/EntryPoint.sol) contract. The tests aim to confirm that the EntryPoint correctly handles various edge cases:
 
 1. **Time constraints**  
 2. **Gas consumption & limits**  
@@ -15,7 +15,6 @@ All tests use [Halmos cheatcodes](https://github.com/a16z/halmos-cheatcodes) to 
 ## File Overview
 
 - `EntryPointSymbolicTest.sol`: Main test contract containing multiple “check_” test functions, each addressing a specific scenario in the EntryPoint logic.
-- `RevertingPaymaster.sol` and `FailingTarget.sol`: Support contracts used in the tests to induce failures or reverts under certain circumstances.
 
 ## Test Details
 
